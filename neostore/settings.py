@@ -35,15 +35,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
-WSGI_APPLICATION = 'api.wsgi.app'
+ALLOWED_HOSTS = []
 
 
-from decouple import config
-
-from dotenv import load_dotenv
-
-load_dotenv()
 # Application definition
 
 INSTALLED_APPS = [
